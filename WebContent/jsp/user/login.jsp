@@ -1,6 +1,6 @@
 <%@page contentType="text/html"%>
 <%@page pageEncoding="UTF-8"%>
-<%@ page import="java.org.uta.sams.beans.UserBean,java.org.uta.sams.controller.ProgramController,java.util.ArrayList"%>
+<%@ page import="uta.sams.beans.UserBean,uta.sams.controller.ProgramController,java.util.ArrayList"%>
 <%@ page import = "java.lang.reflect.*" %>
 
 
@@ -25,10 +25,10 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
     <script type="text/javascript">
      function countit()
     {
-       formcontent=document.getElementById('j_password').value
+       formcontent=document.getElementById('j_password').value;
        if(formcontent.length < 6)
        {  
-            alert("password cannot be lessthan six characters");
+            alert("password cannot be less than six characters");
             return false;
         }
        else 
@@ -62,6 +62,7 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
         <td  bgcolor="#FFFFFF"><img src="<%=request.getContextPath()%>/jsp/user/login_images/login_image.jpg" width="169" height="194">          </td>
         <td >
 		<!--<form name="form1" action="/Sams/jsp/user/login_msg.jsp" method="post">-->
+	    <!--  <form name="form1" action='<%= response.encodeURL("j_security_check") %>' method="post" onsubmit="return(countit());">	-->
 	    <form name="form1" action='<%= response.encodeURL("j_security_check") %>' method="post" onsubmit="return(countit());">	
             <table width="200" border="0" cellpadding="5" cellspacing="0" bordercolor="#666666">
             <tr bordercolor="#ffffff">
@@ -72,11 +73,11 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
             <tr bordercolor="#ffffff">
               <td class="heading" align="right">Password</td>
 			  <td width="10"><b>:</b></td>
-              <td><input type="password" name="j_password" size="15"></td>
+              <td><input type="password" id="j_password" name="j_password" size="15"></td>
             </tr>
             <tr bordercolor="#ffffff">
-              <td colspan="3" align="center"><input type="submit" class="buttonclass" value="submit" >
-              &nbsp;<input type="reset" value="reset"></td>
+              <td colspan="3" align="center"><input type="submit" class="buttonclass" value="Login" >
+              &nbsp;<input type="reset" value="Reset"></td>
              
             </tr>
           </table>

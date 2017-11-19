@@ -20,7 +20,8 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
 <script language="javascript">
 
   function perform(){
-      window.location.href="jsp/user/welcome.jsp";
+      //window.location.href="jsp/user/welcome.jsp";
+      window.location.href="login"
   }
 </script>
     <body onload="perform()">

@@ -20,12 +20,13 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
    "http://www.w3.org/TR/html4/loose.dtd">
  
         <%
-          String user=request.getRemoteUser();
-           System.out.println("j_username>>>>>"+request.getParameter("j_username"));
-           userbean.setUsername(user);
+          //String user=request.getRemoteUser();
+        	UserBean ub = (UserBean)session.getAttribute("user");
+           System.out.println(ub.getUsername());
+           //userbean.setUsername(user);
            //userbean.setPassword(request.getParameter("j_password"));
-   UserController usercontroller=new UserController();
-   UserBean ub=usercontroller.check(userbean);
+   //UserController usercontroller=new UserController();
+   //UserBean ub=usercontroller.check(userbean);
            
 %>
 <html>
@@ -83,10 +84,10 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
        <tr >
             <% String name=""; 
 			if(session.getAttribute("user")!=null)name=((UserBean)session.getAttribute("user")).getUsername(); 
-            name=request.getRemoteUser();
+            //name=request.getRemoteUser();
             %>
         <td  width="50%" bgcolor="#FFFFFF" ><span class="style1">Welcome <%=name%></span><span class="style2">.</span> </td>
-        <td  width="50%" bgcolor="#FFFFFF" align="right" class="style1"><a href="/Sams/jsp/user/logoff.jsp">Sign Out </a></td>
+        <td  width="50%" bgcolor="#FFFFFF" align="right" class="style1"><a href="/Sams1/logoff">Sign Out </a></td>
       </tr>
 	  <tr>
 	     <td height="1" bgcolor="#990000" colspan="2"></td>

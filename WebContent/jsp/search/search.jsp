@@ -1,9 +1,9 @@
 <%@page contentType="text/html"%>
 <%@page pageEncoding="UTF-8"%>
-<%@page import="java.org.uta.sams.beans.ProgramBean,java.org.uta.sams.controller.ProgramController,java.util.ArrayList"%>
+<%@page import="uta.sams.beans.ProgramBean,uta.sams.controller.ProgramController,java.util.ArrayList"%>
 <%@page import = "java.lang.reflect.*" %>
 
-<jsp:useBean id="searchbean" scope="request" class="java.org.uta.sams.beans.SearchBean" />
+<jsp:useBean id="searchbean" scope="request" class="uta.sams.beans.SearchBean" />
 <jsp:setProperty name="searchbean" property="*"/>
 
 

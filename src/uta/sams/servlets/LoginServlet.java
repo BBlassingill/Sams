@@ -52,7 +52,7 @@ public class LoginServlet extends HttpServlet {
 			}
 			
 			else {
-				response.sendRedirect("login");
+				response.sendRedirect("jsp/user/error.jsp");
 			}
 //			if(user != null){
 //				session.setAttribute("user", user);
@@ -66,7 +66,7 @@ public class LoginServlet extends HttpServlet {
 		}
 		catch(Exception e){
 			System.out.println(e);
-			response.sendRedirect("login");
+			response.sendRedirect("jsp/user/error.jsp");
 		}
 	}
 }

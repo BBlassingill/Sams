@@ -1,6 +1,6 @@
 <%@page contentType="text/html"%>
 <%@page pageEncoding="UTF-8"%>
-<%@ page import="java.org.uta.sams.beans.ProgramBean,java.org.uta.sams.controller.ProgramController,java.util.ArrayList"%>
+<%@ page import="uta.sams.beans.ProgramBean,uta.sams.controller.ProgramController,java.util.ArrayList"%>
 <%@ page import = "java.lang.reflect.*" %>
 
 
@@ -45,7 +45,7 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
 		
       </tr>
       <tr bordercolor="#ffffff">
-        <td  bgcolor="#FFFFFF"><img src="login_images/login_image.jpg" width="169" height="194">          </td>
+        <td  bgcolor="#FFFFFF"><img src="/Sams1/jsp/user/login_images/login_image.jpg" width="169" height="194">          </td>
         <td >
 		<form name="form1" action="welcome.html">
 		<table width="200" border="0" cellpadding="5" cellspacing="0" bordercolor="#666666">

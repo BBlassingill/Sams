@@ -3,7 +3,7 @@
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
    version="2.4">
-   <session-config>
+   <!--  <session-config>
       <session-timeout>30</session-timeout>
    </session-config>
    
@@ -40,7 +40,7 @@
    <security-role>
       <description> An administrator </description>
       <role-name>sams_admin</role-name>
-   </security-role>
+   </security-role> -->
    
    <welcome-file-list>
      <welcome-file>index.jsp</welcome-file>
@@ -56,6 +56,15 @@
 	<servlet-mapping>
 		<servlet-name>LoginServlet</servlet-name>
 		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>LogOffServlet</servlet-name>
+		<servlet-class>uta.sams.servlets.LogOffServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogOffServlet</servlet-name>
+		<url-pattern>/logoff</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>

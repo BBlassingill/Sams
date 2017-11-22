@@ -326,13 +326,14 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
             
     </td>
     <td style="padding-left:5px">
- <form action="<%=request.getContextPath()%>/jsp/delete/Program_list.jsp" method="post">   
+<!--  <form action="<%=request.getContextPath()%>/jsp/delete/Program_list.jsp" method="post">  -->
+ <form action="<%=request.getContextPath()%>/deleteList" method="post">  
    <table width="100%" border="0" cellpadding="0" cellspacing="0">
      <caption align="top" class="style1">
        <tr >
             <% String name=""; 
 			if(session.getAttribute("user")!=null)name=((UserBean)session.getAttribute("user")).getUsername(); 
-            name=request.getRemoteUser();
+            //name=request.getRemoteUser();
             %>
         <td  class="style1" valign="top">Welcome <%=name%>.</td>
         <td>&nbsp;</td>

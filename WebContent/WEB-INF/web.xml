@@ -94,4 +94,76 @@
 		<servlet-name>WelcomeServlet</servlet-name>
 		<url-pattern>/welcome</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DeleteServlet</servlet-name>
+		<servlet-class>uta.sams.servlets.DeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteServlet</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DeleteProgramListServlet</servlet-name>
+		<servlet-class>uta.sams.servlets.DeleteProgramListServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteProgramListServlet</servlet-name>
+		<url-pattern>/deleteList</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DeleteProgramDetailServlet</servlet-name>
+		<servlet-class>uta.sams.servlets.DeleteProgramDetailServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteProgramDetailServlet</servlet-name>
+		<url-pattern>/deleteProgram</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DeleteSuccessServlet</servlet-name>
+		<servlet-class>uta.sams.servlets.DeleteSuccessServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteSuccessServlet</servlet-name>
+		<url-pattern>/deleteSuccess</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UpdateServlet</servlet-name>
+		<servlet-class>uta.sams.servlets.UpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateServlet</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UpdateProgramListServlet</servlet-name>
+		<servlet-class>uta.sams.servlets.UpdateProgramListServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateProgramListServlet</servlet-name>
+		<url-pattern>/updateList</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UpdateProgramFormServlet</servlet-name>
+		<servlet-class>uta.sams.servlets.UpdateProgramFormServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateProgramFormServlet</servlet-name>
+		<url-pattern>/updateProgramForm</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UpdateProgramServlet</servlet-name>
+		<servlet-class>uta.sams.servlets.UpdateProgramServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateProgramServlet</servlet-name>
+		<url-pattern>/updateProgram</url-pattern>
+	</servlet-mapping>
 </web-app>

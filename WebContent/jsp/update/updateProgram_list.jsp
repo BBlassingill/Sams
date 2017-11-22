@@ -33,7 +33,7 @@
     <tr >
             
             <% String name=""; if(session.getAttribute("user")!=null)name=((UserBean)session.getAttribute("user")).getUsername(); 
-                name=request.getRemoteUser();
+                //name=request.getRemoteUser();
             %>
         <td  width="322" bgcolor="#FFFFFF"colspan="3" ><span class="style4">Welcome <%=name%></span><span class="style2">.</span> </td>
         <td width="91" bgcolor="#FFFFFF" colspan="2"><span class="style4"><a href="/Sams/jsp/user/logoff.jsp">Sign Out </a></span></td>
@@ -54,6 +54,7 @@
        for(int i=0;i<programlist.size();i++){
            ProgramBean program = (ProgramBean)programlist.get(i);
 %>
+<!-- <tr><td><a href="<%=contextpath%>jsp/update/updateProgram_Form.jsp?program=<%=program.getProgramName()%>&term=<%=program.getTerm()%>"><%=program.getProgramName()%></a></td>-->
 <tr><td><a href="<%=contextpath%>jsp/update/updateProgram_Form.jsp?program=<%=program.getProgramName()%>&term=<%=program.getTerm()%>"><%=program.getProgramName()%></a></td>
 <td><%=program.getTerm()%></td><td><%=program.getProgramType()%></td><td><%=program.getRegion()%></td>
 <td><%=program.getCountry()%></td></tr>           

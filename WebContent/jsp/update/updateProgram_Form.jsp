@@ -296,7 +296,8 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
  </td>
 <td style="padding-left:5px">
 
- <form name="programForm" action="updateProgram.jsp" method="POST">
+ <!--<form name="programForm" action="updateProgram.jsp" method="POST">-->
+ <form name="programForm" action="updateProgram" method="POST">
         <input type="hidden" name="programID" value="<%=programbean.getProgramID()%>">
         <input type="hidden" name="termID" value="<%=programbean.getTermID()%>">
         <input type="hidden" name="programName" value="<%=programbean.getProgramName()%>">
@@ -305,7 +306,7 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
        <tr >
             <% String name=""; 
 			if(session.getAttribute("user")!=null)name=((UserBean)session.getAttribute("user")).getUsername(); 
-            name=request.getRemoteUser();
+            //name=request.getRemoteUser();
             %>
         <td  width="50%" bgcolor="#FFFFFF" ><span class="style1">Welcome <%=name%></span><span class="style2">.</span> </td>
         <td  width="50%" bgcolor="#FFFFFF" align="right" class="style1"><a href="/Sams/jsp/user/logoff.jsp">Sign Out </a></td>

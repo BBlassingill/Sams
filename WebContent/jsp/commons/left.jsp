@@ -172,10 +172,12 @@ Good luck - Angus.
         <td> <li><a href="<%=request.getContextPath()%>/jsp/add/addProgram_Form.jsp"> 
             <div class="sublist">Add Program</div>
             </a></li>
-			<li><a href="<%=request.getContextPath()%>/jsp/update/updatesearch.jsp"> 
+			<!-- <li><a href="<%=request.getContextPath()%>/jsp/update/updatesearch.jsp"> -->
+			<li><a href="<%=request.getContextPath()%>/update"> 
             <div class="sublist">Edit Program</div>
             </a></li>
-			<li><a href="<%=request.getContextPath()%>/jsp/delete/deletesearch.jsp"> 
+			<!--  <li><a href="<%=request.getContextPath()%>/jsp/delete/deletesearch.jsp"> -->
+			<li><a href="<%=request.getContextPath()%>/delete">
             <div class="sublist">Delete Program</div>
             </a></li>
             <li><a href="<%=request.getContextPath()%>/jsp/upload/upload.jsp"> 

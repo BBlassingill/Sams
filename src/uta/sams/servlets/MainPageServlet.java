@@ -25,9 +25,7 @@ public class MainPageServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		session = request.getSession();
-		
-		
+		session = request.getSession();		
 		request.getRequestDispatcher("/jsp/user/login.jsp").forward(request,response);
 	}
 	

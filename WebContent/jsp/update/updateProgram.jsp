@@ -1,8 +1,6 @@
 <%@page contentType="text/html"%>
 <%@page pageEncoding="UTF-8"%>
 <%@ page import="uta.sams.beans.*,uta.sams.controller.ProgramController,java.util.ArrayList"%>
-<%@ page import = "java.lang.reflect.*" %>
-
 <jsp:useBean id="programbean" scope="request" class="uta.sams.beans.ProgramBean" />
 <jsp:setProperty name="programbean" property="*"/>
 
@@ -107,7 +105,7 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
        <tr >
             <% String name=""; 
 			if(session.getAttribute("user")!=null)name=((UserBean)session.getAttribute("user")).getUsername(); 
-            name=request.getRemoteUser();
+            //name=request.getRemoteUser();
             %>
         <td  width="50%" bgcolor="#FFFFFF" ><span class="style1">Welcome <%=name%></span><span class="style2">.</span> </td>
         <td  width="50%" bgcolor="#FFFFFF" align="right" class="style1"><a href="/Sams/jsp/user/logoff.jsp">Sign Out </a></td>

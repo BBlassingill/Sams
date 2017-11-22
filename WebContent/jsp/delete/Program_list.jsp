@@ -114,7 +114,7 @@ function alternate(id){
        <tr >
             <% String name=""; 
 			if(session.getAttribute("user")!=null)name=((UserBean)session.getAttribute("user")).getUsername(); 
-            name=request.getRemoteUser();
+            //name=request.getRemoteUser();
             %>
         <td colspan="4"><span class="style1">Welcome <%=name%></span><span class="style1">.</span> </td>
         <td align="right" colspan="2"><span class="style1"><a href="/Sams/jsp/user/logoff.jsp">Sign Out </a></span></td>
@@ -146,7 +146,9 @@ function alternate(id){
 %>
 
 
-<tr valign="top"><td ><a href="<%=contextpath%>jsp/delete/deleteProgram_detail.jsp?program_name=<%=program.getProgramName()%>&term=<%=program.getTerm()%>"><%=program.getProgramName()%></a></td>
+<!--<tr valign="top"><td ><a href="<%=contextpath%>jsp/delete/deleteProgram_detail.jsp?program_name=<%=program.getProgramName()%>&term=<%=program.getTerm()%>"><%=program.getProgramName()%></a></td>-->
+<tr><td><a href="<%=contextpath%>deleteProgram?program_name=<%=program.getProgramName()%>&term=<%=program.getTerm()%>"><%=program.getProgramName()%></a></td>
+
 <td width="15%"><%=program.getTerm()%></td><td width="15%"><%=program.getProgramType()%></td><td width="15%"><%=program.getRegion()%></td><td width="15%"><%=program.getCountry()%></td>
 <td width="25%">
     <%for(int j=0;j<program.getSubjects().length;j++){%>

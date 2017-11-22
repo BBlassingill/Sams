@@ -59,7 +59,7 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
    <tr >
             <% String name=""; 
 			if(session.getAttribute("user")!=null)name=((UserBean)session.getAttribute("user")).getUsername(); 
-            name=request.getRemoteUser();
+            //name=request.getRemoteUser();
             %>
         <td width="60%" bgcolor="#FFFFFF" ><span class="style1">Welcome <%=name%></span><span class="style2">.</span> </td>
         <td width="40%" bgcolor="#FFFFFF" align="right"><span class="style1"><a href="/Sams/jsp/user/logoff.jsp">Sign Out </a></span></td>

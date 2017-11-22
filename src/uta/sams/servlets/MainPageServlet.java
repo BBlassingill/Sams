@@ -16,8 +16,8 @@ import uta.sams.dbconnection.UserDBManager;
 /**
  * Servlet implementation class LoginServlet
  */
-@WebServlet("/LoginServlet")
-public class LoginServlet extends HttpServlet {
+
+public class MainPageServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	HttpSession session;
 	
@@ -26,6 +26,8 @@ public class LoginServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		session = request.getSession();
+		
+		
 		request.getRequestDispatcher("/jsp/user/login.jsp").forward(request,response);
 	}
 	
@@ -34,39 +36,38 @@ public class LoginServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		session = request.getSession();
-		String username = request.getParameter("j_username");
-		String password = request.getParameter("j_password");
-//		GetSet sets = new GetSet();
-//		sets.setEmailAddress(emailAddress);
-//		sets.setPassword(password);
-		try{
-			//call db manager and authenticate user, return value will be 0 or
-			//an integer indicating a role
-			UserDBManager dbm = new UserDBManager();
-			UserBean user = dbm.getUser(username);
-			
-			if (user != null && user.isCorrectPassword(password)) {
-				//Check password
-				session.setAttribute("user", user);
-				response.sendRedirect("welcome");
+		
+		//Process login
+		if (request.getParameter("login") != null) {
+			String username = request.getParameter("j_username");
+			String password = request.getParameter("j_password");
+
+			try{
+				UserDBManager dbm = new UserDBManager();
+				UserBean user = dbm.getUser(username);
+				
+				if (user != null && user.isCorrectPassword(password)) {
+					session.setAttribute("user", user);
+					response.sendRedirect("welcome");
+				}
+				
+				else {
+					response.sendRedirect("error");
+				}
 			}
-			
-			else {
-				response.sendRedirect("jsp/user/error.jsp");
+				
+			catch(Exception e){
+				System.out.println(e);
+				response.sendRedirect("error");
+				
 			}
-//			if(user != null){
-//				session.setAttribute("user", user);
-//				response.sendRedirect("index");
-//			}
-//			else{
-//				//redirect back to login if authentication fails
-//				//need to add a "invalid username or password" response
-//				response.sendRedirect("login");
-//			}
+				
 		}
-		catch(Exception e){
-			System.out.println(e);
-			response.sendRedirect("jsp/user/error.jsp");
+		
+		//Process register
+		else {
+			response.sendRedirect("register");
 		}
+		
 	}
 }

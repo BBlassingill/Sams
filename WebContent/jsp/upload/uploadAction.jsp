@@ -1,6 +1,6 @@
 <%@page contentType="text/html"%>
 <%@page pageEncoding="UTF-8"%>
-<%@ page import="java.org.uta.sams.beans.*,java.org.uta.sams.controller.ProgramController,java.util.ArrayList,java.io.*"%>
+<%@ page import="uta.sams.beans.*,uta.sams.controller.ProgramController,java.util.ArrayList,java.io.*"%>
 <%@ page import = "java.lang.reflect.*" %>
 
 

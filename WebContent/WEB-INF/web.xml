@@ -50,13 +50,23 @@
    </welcome-file-list>
    
    	<servlet>
-		<servlet-name>LoginServlet</servlet-name>
-		<servlet-class>uta.sams.servlets.LoginServlet</servlet-class>
+		<servlet-name>MainPageServlet</servlet-name>
+		<servlet-class>uta.sams.servlets.MainPageServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>LoginServlet</servlet-name>
+		<servlet-name>MainPageServlet</servlet-name>
 		<url-pattern>/login</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RegisterServlet</servlet-name>
+		<servlet-class>uta.sams.servlets.RegisterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegisterServlet</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+	
 	
 	<servlet>
 		<servlet-name>LogOffServlet</servlet-name>

@@ -1,6 +1,6 @@
 <%@page contentType="text/html"%>
 <%@page pageEncoding="UTF-8"%>
-<%@page import="java.org.uta.sams.controller.ProgramController, java.org.uta.sams.beans.*"%><%@page contentType="text/html"%>
+<%@page import="uta.sams.controller.ProgramController, uta.sams.beans.*"%><%@page contentType="text/html"%>
 
 <%--
 The taglib directive below imports the JSTL library. If you uncomment it,

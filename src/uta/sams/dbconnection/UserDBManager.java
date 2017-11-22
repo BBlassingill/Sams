@@ -29,14 +29,14 @@ public class UserDBManager {
     public UserBean getUser(String username) throws ClassNotFoundException, SQLException{
         DBConnection connection= DBConnection.getInstance();
         Connection con=connection.getConnection();
-        String query = "select u.username,ur.roles,u.password from user u,user_roles ur where u.username='"+username+"' and ur.username=u.username";
+        String query = "select u.username,u.password from user u where u.username='"+username+"'";
         System.out.println(query);
         Statement stmt=con.createStatement();
         ResultSet rs=stmt.executeQuery(query);
         String password=null;
         UserBean userBean = new UserBean();
         if(rs.next()){
-           userBean.setRole(rs.getString("roles"));
+           //userBean.setRole(rs.getString("roles"));
            userBean.setPassword(rs.getString("password"));
            userBean.setUsername(username);
            
@@ -47,6 +47,32 @@ public class UserDBManager {
         }
         con.close();
         return userBean;
+    }
+    
+    public Boolean registerUser(UserBean user) throws Exception {
+    	DBConnection connection = DBConnection.getInstance();
+        Connection con  = connection.getConnection();
+        
+        String username = user.getUsername();
+        String password = user.getPassword();
+        String query = "INSERT INTO user (`password`, `username`) VALUES ('" + username + "', '" + password + "')";
+        //String query = "select u.username,ur.roles,u.password from user u,user_roles ur where u.username='"+username+"' and ur.username=u.username";
+        System.out.println(query);
+        Statement stmt=con.createStatement();
+        int rs=stmt.executeUpdate(query);
+        
+        //Check if insertion was successful
+        query = "select u.username ,u.password from user u where u.username='"+username+"' and u.password='" + password +"'";
+        stmt = con.createStatement();
+        ResultSet rs1 = stmt.executeQuery(query);
+        
+        if (rs1.next()) {
+        	if (username.equals(rs1.getString("username")) && password.equals(rs1.getString("password"))) {
+        		return true;
+        	}
+        }
+        
+        return false;
     }
     
 }

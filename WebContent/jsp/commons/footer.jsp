@@ -12,7 +12,7 @@
 <map name="bottomMap">
   <!-- <area shape="rect" coords="1,1,106,30">
   <area shape="rect" coords="108,1,214,30">
-<area shape="rect" coords="214,1,320,30"> --><area shape="rect" coords="2,2,140,31"><area shape="rect" coords="141,2,322,31"><area shape="rect" coords="323,2,462,31"><area shape="rect" coords="463,2,602,31" href="http://www.uta.edu/oie/news/newsFlashes.php" alt="News Flashes"><area shape="rect" coords="603,2,742,31">
+<area shape="rect" coords="214,1,320,30"> --><area shape="rect" coords="2,2,140,31"><area shape="rect" coords="141,2,322,31"><area shape="rect" coords="323,2,462,31"><area shape="rect" coords="463,2,602,31" href="https://www.uta.edu/news/" alt="News Flashes"><area shape="rect" coords="603,2,742,31">
    
 </map>
 

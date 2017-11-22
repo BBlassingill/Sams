@@ -1,10 +1,10 @@
 <%@page contentType="text/html"%>
 <%@page pageEncoding="UTF-8"%>
-<%@ page import="java.org.uta.sams.beans.*,java.org.uta.sams.controller.ProgramController,java.util.ArrayList"%>
+<%@ page import="uta.sams.beans.*,uta.sams.controller.ProgramController,java.util.ArrayList"%>
 <%@ page import = "java.lang.reflect.*" %>
 
 
-<jsp:useBean id="programbean" scope="request" class="java.org.uta.sams.beans.ProgramBean" />
+<jsp:useBean id="programbean" scope="request" class="uta.sams.beans.ProgramBean" />
 <jsp:setProperty name="programbean" property="*"/>
 
 

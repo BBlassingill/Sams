@@ -13,7 +13,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Program List</title>
     </head>
     <body>
    <table valign="top" cellpadding="0"align="center" cellspacing="0" width='759'>
@@ -36,7 +36,7 @@
                 //name=request.getRemoteUser();
             %>
         <td  width="322" bgcolor="#FFFFFF"colspan="3" ><span class="style4">Welcome <%=name%></span><span class="style2">.</span> </td>
-        <td width="91" bgcolor="#FFFFFF" colspan="2"><span class="style4"><a href="/Sams/jsp/user/logoff.jsp">Sign Out </a></span></td>
+        <td width="91" bgcolor="#FFFFFF" colspan="2"><span class="style4"><a href="logoff">Sign Out </a></span></td>
       </tr>
 	  <tr>
 	     <td height="1" bgcolor="#990000" colspan="5"></td>

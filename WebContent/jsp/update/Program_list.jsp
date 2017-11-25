@@ -16,7 +16,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>JSP Page</title>
+<title>Search Results</title>
         <style type="text/css">
 <!--
 .tableheading {
@@ -145,7 +145,7 @@ function alternate(id){
             //name=request.getRemoteUser();
             %>
         <td colspan="4"><span class="style1">Welcome <%=name%></span><span class="style1">.</span> </td>
-        <td align="right" colspan="2"><span class="style1"><a href="/Sams/jsp/user/logoff.jsp">Sign Out </a></span></td>
+        <td align="right" colspan="2"><span class="style1"><a href="logoff">Sign Out </a></span></td>
       </tr>
 	  <tr>
 	     <td height="1" bgcolor="#990000" colspan="6"></td>

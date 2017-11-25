@@ -336,7 +336,7 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
             %>
         <td  class="style1" valign="top">Welcome <%=name%>.</td>
         <td>&nbsp;</td>
-        <td width="91"  align="right" class="style1" valign="top"><a href="/Sams/jsp/user/logoff.jsp">Sign Out </a></td>
+        <td width="91"  align="right" class="style1" valign="top"><a href="logoff">Sign Out </a></td>
       </tr>
       <tr>
 	     <td height="6" colspan="3"></td>

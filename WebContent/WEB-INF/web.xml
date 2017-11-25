@@ -175,4 +175,31 @@
 		<servlet-name>UpdateProgramServlet</servlet-name>
 		<url-pattern>/updateProgram</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetUserServlet</servlet-name>
+		<servlet-class>uta.sams.servlets.GetUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetUserServlet</servlet-name>
+		<url-pattern>/getUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UserDetailsServlet</servlet-name>
+		<servlet-class>uta.sams.servlets.UserDetailsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserDetailsServlet</servlet-name>
+		<url-pattern>/userDetails</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UserErrorServlet</servlet-name>
+		<servlet-class>uta.sams.servlets.UserErrorServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserErrorServlet</servlet-name>
+		<url-pattern>/userError</url-pattern>
+	</servlet-mapping>
 </web-app>

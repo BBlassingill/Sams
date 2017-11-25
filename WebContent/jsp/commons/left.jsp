@@ -206,6 +206,9 @@ Good luck - Angus.
 			<li><a href="#"> 
             <div class="sublist">Delete User Profile</div>
             </a></li>
+            <li><a href="getUser"> 
+            <div class="sublist">Get User</div>
+            </a></li>
 		
          </td>
       </tr>

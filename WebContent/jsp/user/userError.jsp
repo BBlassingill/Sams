@@ -38,11 +38,10 @@
                   <tr bordercolor="#ffffff">
                      <td  bgcolor="#FFFFFF"><img src="<%=request.getContextPath()%>/jsp/user/login_images/login_image.jpg" width="169" height="194">          </td>
                      <td >
-                        <!--<form name="form1" action="/Sams/jsp/user/login_msg.jsp" method="post">-->
-                        <form name="form1" action='<%= response.encodeURL("j_security_check") %>' method="post">
+                        <form name="form1" action="" method="post">
                            <table width="200" border="0" cellpadding="5" cellspacing="0" bordercolor="#666666">
                               <tr bordercolor="#ffffff">
-                                 <td align="center"><a href="login">Login Failed</a></td>
+                                 <td align="center"><a href="welcome">The user was not found!</a></td>
                               </tr>
                            </table>
                         </form>

@@ -29,16 +29,18 @@ public class UserDBManager {
     public UserBean getUser(String username) throws ClassNotFoundException, SQLException{
         DBConnection connection= DBConnection.getInstance();
         Connection con=connection.getConnection();
-        String query = "select u.username,u.password from user u where u.username='"+username+"'";
+        //String query = "select u.username,u.password from user u where u.username='"+username+"'";
+        String query = "select u.username,u.password,r.roles from user u,user_roles r where u.username=r.username and u.username='" + username +"'";
         System.out.println(query);
         Statement stmt=con.createStatement();
         ResultSet rs=stmt.executeQuery(query);
         String password=null;
         UserBean userBean = new UserBean();
         if(rs.next()){
-           //userBean.setRole(rs.getString("roles"));
+           userBean.setRole(rs.getString("roles"));
            userBean.setPassword(rs.getString("password"));
            userBean.setUsername(username);
+           
            
         }else
         {

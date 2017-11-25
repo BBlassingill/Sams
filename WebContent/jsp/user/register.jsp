@@ -29,18 +29,7 @@
                 </td>
             </tr>
         </table>
-        
 
-		<!--  <form action="#" method="post">
-		
-		    Username: <input type="text" name="username">
-		    <br> Password: <input type="text" name="password">
-		    
-		    <p>
-		        <br>
-		        <input type="submit" class="buttonclass">
-		</form> -->
-		
 		<table valign="top" align="center" width="759" height="425" cellspacing="0" cellpadding="0">
 		
         <tr>
@@ -91,18 +80,6 @@
             </td>
         </tr>
     </table>
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		
         <table align="center" cellpadding="0" cellspacing="0">
             <tr>

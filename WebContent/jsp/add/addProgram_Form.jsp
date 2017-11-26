@@ -557,16 +557,15 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
  </td>
 <td style="padding-left:5px">
     
-  <form name="programForm" action="<%=request.getContextPath()%>/jsp/add/addProgram.jsp" onSubmit="return(validateForm());" method="POST">
+  <form name="programForm" action="addProgram" onSubmit="return(validateForm());" method="POST">
   <table width="100%" border="0" cellspacing="5" name="formTable">
     <caption align="top" class="style1">
        <tr >
             <% String name=""; 
 			if(session.getAttribute("user")!=null)name=((UserBean)session.getAttribute("user")).getUsername(); 
-            name=request.getRemoteUser();
             %>
         <td  width="50%" bgcolor="#FFFFFF" ><span class="style1">Welcome <%=name%></span><span class="style2">.</span> </td>
-        <td  width="50%" bgcolor="#FFFFFF" align="right" class="style1"><a href="/Sams/jsp/user/logoff.jsp">Sign Out </a></td>
+        <td  width="50%" bgcolor="#FFFFFF" align="right" class="style1"><a href="logoff">Sign Out </a></td>
       </tr>
 	  <tr>
 	     <td height="1" bgcolor="#990000" colspan="2"></td>

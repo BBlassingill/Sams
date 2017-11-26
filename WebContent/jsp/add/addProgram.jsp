@@ -141,8 +141,7 @@ String msg = programController.addProgram(programbean);
         
         <tr >
             
-            <% String name=""; if(session.getAttribute("user")!=null)name=((UserBean)session.getAttribute("user")).getUsername(); 
-            name=request.getRemoteUser();
+            <% String name=""; if(session.getAttribute("user")!=null)name=((UserBean)session.getAttribute("user")).getUsername();
             %>
         <td  width="322" class="formtable" ><span>Welcome <%=name%></span><span>.</span> </td>
         <td width="91" class="formtable" align="right"><span class="style4"><a href="/Sams/jsp/user/logoff.jsp" >Sign Out </a></span></td>

@@ -64,7 +64,7 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
     </td></tr>
 </table>    
  <table valign="top" align="center" width="759" cellspacing="0" cellpadding="0"><tr>
-<td style="border-right: 1px solid rgb(255, 255, 255);" bgcolor="#666666" height="92" valign="top" width="330">
+	<td style="border-right: 1px solid rgb(255, 255, 255);" bgcolor="#666666" height="92" valign="top" width="330">
  <script type="text/javascript" src="/jsp/commons/sams/fsmenu.js"></script>
  <jsp:include page="/jsp/commons/left.jsp"/>
             
@@ -87,6 +87,8 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
 	  </tr>      
           <tr>
           <td class="style1" colspan="2">Welcome to OIE Program Management</td></tr>
+       <tr><td colspan="2">&nbsp;</td></tr>
+       <tr><td><form action="" method="post"><input type="submit" value="Register Event"size="15"></form></td></tr>
        <tr><td colspan="2">&nbsp;</td></tr>
        <td class="formtable" colspan="2">Please use the left Navigation menu for Program Management</td></tr>
        <tr><td colspan="2">&nbsp;</td></tr>

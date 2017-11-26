@@ -60,7 +60,7 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
                         <td>
                             <!--<form name="form1" action="/Sams/jsp/user/login_msg.jsp" method="post">-->
                             <!--  <form name="form1" action='<%= response.encodeURL("j_security_check") %>' method="post" onsubmit="return(countit());">	-->
-                            <form name="form1" action=# method="post">
+                            <form name="form1" action="" method="post">
                                 <table width="200" border="0" cellpadding="5" cellspacing="0" bordercolor="#666666">
                                     <tr bordercolor="#ffffff">
                                         <td class="heading" align="right">Login</td>

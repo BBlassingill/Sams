@@ -202,4 +202,22 @@
 		<servlet-name>UserErrorServlet</servlet-name>
 		<url-pattern>/userError</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RegisterEventServlet</servlet-name>
+		<servlet-class>uta.sams.servlets.RegisterEventServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegisterEventServlet</servlet-name>
+		<url-pattern>/registerEvent</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AddProgramServlet</servlet-name>
+		<servlet-class>uta.sams.servlets.AddProgramServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddProgramServlet</servlet-name>
+		<url-pattern>/addProgram</url-pattern>
+	</servlet-mapping>
 </web-app>

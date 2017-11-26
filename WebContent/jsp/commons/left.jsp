@@ -169,7 +169,7 @@ Good luck - Angus.
     <table align="center">
       <tbody><tr> 
         <td width="25"></td>
-        <td> <li><a href="<%=request.getContextPath()%>/jsp/add/addProgram_Form.jsp"> 
+        <td> <li><a href="registerEvent"> 
             <div class="sublist">Add Program</div>
             </a></li>
 			<!-- <li><a href="<%=request.getContextPath()%>/jsp/update/updatesearch.jsp"> -->

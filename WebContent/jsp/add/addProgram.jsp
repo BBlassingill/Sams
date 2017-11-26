@@ -69,7 +69,7 @@ String msg = programController.addProgram(programbean);
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Add Program</title>
 		<style type="text/css">
 <!--
 .formtable {

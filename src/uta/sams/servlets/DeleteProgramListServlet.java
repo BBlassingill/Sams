@@ -20,6 +20,9 @@ public class DeleteProgramListServlet extends HttpServlet {
 		request.getRequestDispatcher("jsp/delete/Program_list.jsp").forward(request,response);
 	}
 	
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		session = request.getSession();		
 		request.getRequestDispatcher("jsp/delete/Program_list.jsp").forward(request,response);

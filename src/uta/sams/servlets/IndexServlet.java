@@ -14,7 +14,6 @@ import javax.servlet.http.HttpSession;
 public class IndexServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	HttpSession session;
-	private String header;
 	
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)

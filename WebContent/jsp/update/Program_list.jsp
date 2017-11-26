@@ -142,7 +142,6 @@ function alternate(id){
        <tr >
             <% String name=""; 
 			if(session.getAttribute("user")!=null)name=((UserBean)session.getAttribute("user")).getUsername(); 
-            //name=request.getRemoteUser();
             %>
         <td colspan="4"><span class="style1">Welcome <%=name%></span><span class="style1">.</span> </td>
         <td align="right" colspan="2"><span class="style1"><a href="logoff">Sign Out </a></span></td>

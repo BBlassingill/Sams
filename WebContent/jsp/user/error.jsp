@@ -38,7 +38,6 @@
                   <tr bordercolor="#ffffff">
                      <td  bgcolor="#FFFFFF"><img src="<%=request.getContextPath()%>/jsp/user/login_images/login_image.jpg" width="169" height="194">          </td>
                      <td >
-                        <!--<form name="form1" action="/Sams/jsp/user/login_msg.jsp" method="post">-->
                         <form name="form1" action='<%= response.encodeURL("j_security_check") %>' method="post">
                            <table width="200" border="0" cellpadding="5" cellspacing="0" bordercolor="#666666">
                               <tr bordercolor="#ffffff">

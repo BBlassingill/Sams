@@ -24,8 +24,6 @@ public class WelcomeServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//		session = request.getSession();
-//		request.getRequestDispatcher("/jsp/user/welcome.jsp").forward(request,response);
 		session = request.getSession();
 		response.sendRedirect("registerEvent");
 	}

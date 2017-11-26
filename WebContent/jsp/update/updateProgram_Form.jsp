@@ -313,7 +313,6 @@
                <jsp:include page="/jsp/commons/left.jsp" />
             </td>
             <td style="padding-left:5px">
-               <!--<form name="programForm" action="updateProgram.jsp" method="POST">-->
                <form name="programForm" action="updateProgram" method="POST">
                   <input type="hidden" name="programID" value="<%=programbean.getProgramID()%>">
                   <input type="hidden" name="termID" value="<%=programbean.getTermID()%>">
@@ -323,7 +322,6 @@
                         <tr>
                            <% String name=""; 
                               if(session.getAttribute("user")!=null)name=((UserBean)session.getAttribute("user")).getUsername(); 
-                                       //name=request.getRemoteUser();
                                        %>
                            <td width="50%" bgcolor="#FFFFFF"><span class="style1">Welcome <%=name%></span><span class="style2">.</span> </td>
                            <td width="50%" bgcolor="#FFFFFF" align="right" class="style1"><a href="logoff">Sign Out </a></td>

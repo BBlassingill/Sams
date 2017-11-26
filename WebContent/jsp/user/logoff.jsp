@@ -21,7 +21,7 @@ on Libraries node in Projects view can be used to add the JSTL 1.1 library.
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Log Off</title>
     </head>
     <body>
 <table valign="top" cellpadding="0"align="center" cellspacing="0" width='759'>

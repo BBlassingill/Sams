@@ -57,7 +57,7 @@ public class UserDBManager {
         
         String username = user.getUsername();
         String password = user.getPassword();
-        String query = "INSERT INTO user (`password`, `username`) VALUES ('" + username + "', '" + password + "')";
+        String query = "INSERT INTO user (`username`, `password`) VALUES ('" + username + "', '" + password + "')";
         //String query = "select u.username,ur.roles,u.password from user u,user_roles ur where u.username='"+username+"' and ur.username=u.username";
         System.out.println(query);
         Statement stmt=con.createStatement();
